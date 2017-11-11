@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">real</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_list">MainActivity</string>
+    <string name="title_activity_aty_login">AtyLogin</string>
+    <string name="title_activity_mylist">MainActivity</string>
+    <string name="title_activity_mylist1">MainActivity</string>
+    <string name="title_activity_mylist2">MainActivity</string>
+
+</resources>

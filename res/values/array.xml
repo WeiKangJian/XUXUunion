@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+     <item> "                "北京理工大学</item>  
+    <item>"               "北京外国语大学</item>  
+    <item>"                 "中国人民大学</item>  
+    <item>"                 "北京师范大学</item>  
+    </string-array>
+</resources>
