@@ -44,6 +44,14 @@
             android:name=".Mylist2Activity"
             android:label="@string/title_activity_mylist2" >
         </activity>
+        <activity
+            android:name=".Listdetail"
+            android:label="@string/title_activity_listdetail" >
+        </activity>
+        <activity
+            android:name=".Mylist3Activity"
+            android:label="@string/title_activity_mylist3" >
+        </activity>
     </application>
 
 </manifest>

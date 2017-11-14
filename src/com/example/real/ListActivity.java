@@ -20,6 +20,7 @@ public class ListActivity extends Activity {
 	    private RelativeLayout re;
 		private View image2;
 		private View image1;
+		private View image3;
 		private Spinner spinner;
 		private ArrayAdapter<String> adapter;
 		private List<String> list = new ArrayList<String>();
@@ -34,6 +35,7 @@ public class ListActivity extends Activity {
 		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, list);
 		image1 = findViewById(R.id.imageView1);
 		image2 = findViewById(R.id.imageView2);
+		image3.findViewById(R.id.imageView5);
 		spinner = (Spinner) findViewById(R.id.spinner1);
 		spinner.setAdapter(adapter);
 		image2.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +52,13 @@ public class ListActivity extends Activity {
 				startmylist2();
 			}
 		});
+		image3.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startmylist3();
+			}
+		});
 		spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
 
 			@Override
@@ -62,7 +71,7 @@ public class ListActivity extends Activity {
 					re.setBackgroundResource(R.drawable.bit);
 				}
 			}
-
+                                                                                                                                                                                                                                                             
 			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
 				// TODO Auto-generated method stub
@@ -77,6 +86,10 @@ public class ListActivity extends Activity {
 	private void startmylist2(){
 		Intent intent2 = new Intent(this,Mylist2Activity.class);
 		startActivity(intent2);
+	}
+	private void startmylist3(){
+		Intent intent3 = new Intent(this,Mylist3Activity.class);
+		startActivity(intent3);
 	}
 
 }
