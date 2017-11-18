@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:text="校园"
+                android:text=" 每日校园"
                 android:textSize="20sp"
                 android:textStyle="bold" 
                 android:gravity="center"/>
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:text="论坛"
+                android:text="校友论坛"
                 android:textSize="20sp"
                 android:textStyle="bold"
                  android:gravity="center" />
@@ -90,14 +90,22 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp">
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
-				android:layout_weight="1"
+				android:layout_weight="0.5"
                 android:src="@drawable/ic_launcher5" />
+
+            <ImageView
+                android:id="@+id/six"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/six" />
 
         </LinearLayout>
 
@@ -110,18 +118,28 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="寻觅"
+                android:text="寻觅知音"
+                android:layout_weight="0.5"
                 android:textSize="20sp"
+                android:gravity="center"
                 android:textStyle="bold" />
-
+	<TextView 
+	    android:id="@+id/new123"
+	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发起讨论"
+                android:layout_weight="0.5"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold" 
+	    />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp" >
+            android:layout_marginTop="10dp"
+           >
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -147,7 +165,7 @@
                  android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:text="好友"
+                android:text="我的好友"
                  android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -157,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:text="身边"
+                android:text="联系我们"
                  android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />

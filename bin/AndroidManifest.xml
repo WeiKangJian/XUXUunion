@@ -52,6 +52,22 @@
             android:name=".Mylist3Activity"
             android:label="@string/title_activity_mylist3" >
         </activity>
+        <activity
+            android:name=".Addfriend"
+            android:label="@string/title_activity_addfriendactivity" >
+        </activity>
+        <activity
+            android:name=".FriendList"
+            android:label="@string/title_activity_friend_list" >
+        </activity>
+        <activity
+            android:name=".Strattips"
+            android:label="@string/title_activity_strattips" >
+        </activity>
+        <activity
+            android:name=".Robert"
+            android:label="@string/title_activity_robert" >
+        </activity>
     </application>
 
 </manifest>

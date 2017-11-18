@@ -12,5 +12,9 @@
     <string name="title_activity_mylist2">MainActivity</string>
     <string name="title_activity_listdetail">Listdetail</string>
     <string name="title_activity_mylist3">Mylist3Activity</string>
+    <string name="title_activity_addfriendactivity">MainActivity</string>
+    <string name="title_activity_friend_list">FriendList</string>
+    <string name="title_activity_strattips">Strattips</string>
+    <string name="title_activity_robert">Robert</string>
 
 </resources>

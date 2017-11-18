@@ -3,6 +3,7 @@ package com.example.real;
 import java.util.ArrayList;
 import java.util.List;
 
+import Config.thelistcontent;
 import android.app.Activity;
 import android.content.Intent;
 import android.media.Image;
@@ -21,6 +22,9 @@ public class ListActivity extends Activity {
 		private View image2;
 		private View image1;
 		private View image3;
+		private View image4;
+		private View image5;
+		private View image6;
 		private Spinner spinner;
 		private ArrayAdapter<String> adapter;
 		private List<String> list = new ArrayList<String>();
@@ -28,20 +32,23 @@ public class ListActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_mylist);
-		list.add("北京理工大学");
 		list.add("北京外国语大学");
+		list.add("北京理工大学");
 		list.add("中国人民大学");
 		re = (RelativeLayout) findViewById(R.id.re);
 		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, list);
 		image1 = findViewById(R.id.imageView1);
 		image2 = findViewById(R.id.imageView2);
-		image3.findViewById(R.id.imageView5);
+		image3 =findViewById(R.id.imageView5);
+		image4 = findViewById(R.id.imageView3);
+		image5 = findViewById(R.id.six);
+		image6 = findViewById(R.id.imageView4);
 		spinner = (Spinner) findViewById(R.id.spinner1);
 		spinner.setAdapter(adapter);
 		image2.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
-			public void onClick(View arg0) {
+			public void onClick(View arg0) {;
 					startmylist1();
 			}
 		});
@@ -57,6 +64,27 @@ public class ListActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				startmylist3();
+			}
+		});
+		image4.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				strataddFriend();
+			}
+		});
+		image5.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startSend();
+			}
+		});
+		image6.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startRobert();
 			}
 		});
 		spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
@@ -91,5 +119,16 @@ public class ListActivity extends Activity {
 		Intent intent3 = new Intent(this,Mylist3Activity.class);
 		startActivity(intent3);
 	}
-
+	private void strataddFriend(){
+		Intent intent4 = new Intent(this,FriendList.class);
+		startActivity(intent4);
+	}
+	private void startSend(){
+		Intent intent5 = new Intent(this,Strattips.class);
+		startActivity(intent5);
+	}
+	private void startRobert(){
+		Intent intent6 = new Intent(this,Robert.class);
+		startActivity(intent6);
+	}
 }

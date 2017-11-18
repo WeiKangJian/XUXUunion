@@ -8,6 +8,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.real.Mylist3Activity" >
 
-    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="这是我们根据您的情况推荐的人"
+		    android:gravity="center_horizontal"/>
+        <ListView
+            android:id="@+id/listViewcopy"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" >
+        </ListView>
+
+        <Button
+            android:id="@+id/buttontoupdata"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="换一批" />
+
+    </LinearLayout>
 
 </RelativeLayout>
