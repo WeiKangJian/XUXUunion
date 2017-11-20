@@ -9,9 +9,8 @@
         android:id="@+id/iv"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:paddingRight="10dp"
         android:paddingLeft="0dp"
-        android:src="@drawable/chenchen" />
+        android:src="@drawable/head3" />
 
     <TextView
         android:id="@+id/tv"

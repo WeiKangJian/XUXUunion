@@ -15,8 +15,9 @@ import android.widget.Toast;
 
 public class Strattips extends Activity {
 		private Button button1;
-		private Toast toast;
 		private EditText thetext;
+		private EditText thetext2;
+		private EditText thetext3;
 		public static int  timeclick = 0;
 		public static final String action ="123";
 	@Override
@@ -25,6 +26,8 @@ public class Strattips extends Activity {
 		setContentView(R.layout.activity_strattips);
 		button1=(Button) findViewById(R.id.buttontosend);
 		thetext = (EditText) findViewById(R.id.mytext);
+		thetext2 = (EditText) findViewById(R.id.name);
+		thetext3 = (EditText) findViewById(R.id.maincontent);
 		button1.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -36,6 +39,8 @@ public class Strattips extends Activity {
 				timeclick++;
 				thelistcontent.flag=true;
 				thelistcontent.Mycontent=thetext.getText().toString();
+				thelistcontent.Myname = thetext2.getText().toString();
+				thelistcontent.Mymain = thetext3.getText().toString();
 //				Intent intent = new Intent(action); 
 //				intent.putExtra("dir",true);
 //                sendBroadcast(intent);

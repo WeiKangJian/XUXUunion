@@ -11,6 +11,8 @@ public class thelistcontent {
 	 private String desc;
 	 private String content;
 	 private String introduce;
+	 public static String Myname;
+	 public static String Mymain;
 	 public static String Mycontent ;
 	 public  static boolean flag = false;
 	 public thelistcontent(String name,String introduce,int imageId, String content,String desc) {
@@ -37,7 +39,7 @@ public class thelistcontent {
     }
 	public static List<thelistcontent> getAllLists() {
 	    if (flag==true){
-	        teachers.add(new thelistcontent(" 我自己","我是 ，我为自己代言", R.drawable.head8, "我要加工资",Mycontent));
+	        teachers.add(new thelistcontent(Myname,"不可添加自己为好友", R.drawable.head8, Mymain,Mycontent));
 	        }
 	    flag =false;
 		return teachers;
