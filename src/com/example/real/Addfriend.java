@@ -1,8 +1,10 @@
 package com.example.real;
 
+import Config.Myfriendinfo;
 import Config.config2;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap.Config;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,8 +19,12 @@ public class Addfriend extends Activity {
 	private Button button;
 	private Toast toast;
 	public Context Addfriend;
+	public static int number = 1;
+	//好友数量
 	private void setfriend(){
-		config2.setcacheToken(this, getIntent().getStringExtra("teacher_name"));
+		config2.setcacheToken(this, String.valueOf(number),getIntent().getStringExtra("teacher_name"));
+		Myfriendinfo.mid = config2.getcacheToken(this, String.valueOf(number));
+		number++;
 	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +35,9 @@ public class Addfriend extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				toast("请求发送成功");
+				toast("成功添加好友");
 				setfriend();
+				startmyfriend();
 				finish();
 			}
 		});
@@ -50,4 +57,8 @@ public class Addfriend extends Activity {
 		Toast.makeText(this, content, Toast.LENGTH_SHORT).show();
 			
 		}
+	private void startmyfriend(){
+		Intent intent = new Intent(this,FriendList.class);
+		startActivity(intent);
+	}
 }

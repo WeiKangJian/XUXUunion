@@ -45,6 +45,7 @@ public class Strattips extends Activity {
 //				intent.putExtra("dir",true);
 //                sendBroadcast(intent);
 				toast("发布成功");
+				startlist1();
 				finish();
 				}
 			}
@@ -54,4 +55,8 @@ public class Strattips extends Activity {
 		Toast.makeText(this, content, Toast.LENGTH_SHORT).show();
 			
 		}
+	private void startlist1(){
+		Intent intent =new Intent(this,Mylist1Activity.class);
+		startActivity(intent);
+	}
 }
