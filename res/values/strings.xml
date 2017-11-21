@@ -16,5 +16,6 @@
     <string name="title_activity_friend_list">FriendList</string>
     <string name="title_activity_strattips">Strattips</string>
     <string name="title_activity_robert">Robert</string>
+    <string name="title_activity_myinfo">Myinfo</string>
 
 </resources>

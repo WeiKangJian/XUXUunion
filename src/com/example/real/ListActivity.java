@@ -25,6 +25,7 @@ public class ListActivity extends Activity {
 		private View image4;
 		private View image5;
 		private View image6;
+		private View image7;
 		private Spinner spinner;
 		private ArrayAdapter<String> adapter;
 		private List<String> list = new ArrayList<String>();
@@ -43,6 +44,7 @@ public class ListActivity extends Activity {
 		image4 = findViewById(R.id.imageView3);
 		image5 = findViewById(R.id.six);
 		image6 = findViewById(R.id.imageView4);
+		image7 = findViewById(R.id.imageView7);
 		spinner = (Spinner) findViewById(R.id.spinner1);
 		spinner.setAdapter(adapter);
 		image2.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +87,14 @@ public class ListActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				startRobert();
+			}
+		});
+		image7.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				startMyfo();
 			}
 		});
 		spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
@@ -130,5 +140,9 @@ public class ListActivity extends Activity {
 	private void startRobert(){
 		Intent intent6 = new Intent(this,Robert.class);
 		startActivity(intent6);
+	}
+	private void startMyfo(){
+		Intent intent7 = new Intent(this,Myinfo.class);
+		startActivity(intent7);
 	}
 }

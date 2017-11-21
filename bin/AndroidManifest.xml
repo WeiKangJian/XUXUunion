@@ -68,6 +68,10 @@
             android:name=".Robert"
             android:label="@string/title_activity_robert" >
         </activity>
+        <activity
+            android:name=".Myinfo"
+            android:label="@string/title_activity_myinfo" >
+        </activity>
     </application>
 
 </manifest>

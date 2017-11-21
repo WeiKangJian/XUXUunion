@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class Listdetail extends Activity {
 	private Button submit;
-	private Toast toast;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
