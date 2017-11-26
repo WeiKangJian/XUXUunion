@@ -9,6 +9,7 @@
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.Activitys.real.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,52 +26,68 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ListActivity"
+            android:name="com.Activitys.real.ListActivity"
             android:label="@string/title_activity_list" >
         </activity>
         <activity
-            android:name=".AtyLogin"
+            android:name="com.Activitys.real.AtyLogin"
             android:label="@string/title_activity_aty_login" >
         </activity>
         <activity
-            android:name=".MylistActivity"
+            android:name="com.Activitys.real.MylistActivity"
             android:label="@string/title_activity_mylist" >
         </activity>
         <activity
-            android:name=".Mylist1Activity"
+            android:name="com.Activitys.real.Mylist1Activity"
             android:label="@string/title_activity_mylist1" >
         </activity>
         <activity
-            android:name=".Mylist2Activity"
+            android:name="com.Activitys.real.Mylist2Activity"
             android:label="@string/title_activity_mylist2" >
         </activity>
         <activity
-            android:name=".Listdetail"
+            android:name="com.Activitys.real.Listdetail"
             android:label="@string/title_activity_listdetail" >
         </activity>
         <activity
-            android:name=".Mylist3Activity"
+            android:name="com.Activitys.real.Mylist3Activity"
             android:label="@string/title_activity_mylist3" >
         </activity>
         <activity
-            android:name=".Addfriend"
+            android:name="com.Activitys.real.Addfriend"
             android:label="@string/title_activity_addfriendactivity" >
         </activity>
         <activity
-            android:name=".FriendList"
+            android:name="com.Activitys.real.FriendList"
             android:label="@string/title_activity_friend_list" >
         </activity>
         <activity
-            android:name=".Strattips"
+            android:name="com.Activitys.real.Strattips"
             android:label="@string/title_activity_strattips" >
         </activity>
         <activity
-            android:name=".Robert"
+            android:name="com.Activitys.real.Robert"
             android:label="@string/title_activity_robert" >
         </activity>
         <activity
-            android:name=".Myinfo"
+            android:name="com.Activitys.real.Myinfo"
             android:label="@string/title_activity_myinfo" >
+        </activity>
+        <activity
+            android:name="com.Activitys.real.PicChooserActivity"
+            android:label="@string/title_activity_pic_chooser" >
+        </activity>
+        <activity
+            android:name="com.Activitys.real.PrivateComment"
+            android:label="@string/title_activity_private_comment" >
+        </activity>
+        <activity
+            android:name=".DanmuText"
+            android:label="@string/title_activity_danmu_text" >
+        </activity>
+        <activity
+            android:name=".Danmutext"
+            android:label="@string/title_activity_danmutext" >
         </activity>
     </application>
 

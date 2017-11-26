@@ -3,13 +3,14 @@ package Config;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.real.Addfriend;
+import com.Activitys.real.Addfriend;
 import com.example.real.R;
 
 public class Myfriendinfo {
 	 private String name;
+	 private int image;
 	 public static String mid;
-//	 private int imageId;
+	 public static int imageId;
 //	 private String desc;
 //	 private String content;
 //	 private String introduce;
@@ -17,8 +18,9 @@ public class Myfriendinfo {
 //	 public static String Mymain;
 //	 public static String Mycontent ;
 	// public  static boolean flag = false;
-	 public Myfriendinfo(String name) {
+	 public Myfriendinfo(String name,int image) {
 	        this.name = name;
+	        this.image = image;
 //	        this.imageId = imageId;
 //	        this.content = content;
 //	        this.desc = desc;
@@ -27,7 +29,7 @@ public class Myfriendinfo {
 	public static List<Myfriendinfo> teachers = new ArrayList<Myfriendinfo>();
 	public static List<Myfriendinfo> getAllLists() {
 		if(mid!=null){
-		teachers.add(new Myfriendinfo(mid));}
+		teachers.add(new Myfriendinfo(mid,imageId));}
 		return teachers;
 	}
 	 public String getName() {
@@ -38,13 +40,13 @@ public class Myfriendinfo {
 	        this.name = name;
 	    }
 
-//	    public int getImageId() {
-//	        return imageId;
-//	    }
-//
-//	    public void setImageId(int imageId) {
-//	        this.imageId = imageId;
-//	    }
+	    public int getImageId() {
+	        return image;
+	    }
+
+	    public void setImageId(int imageId) {
+	        this.image = imageId;
+	    }
 //	    public void setcontent(String content){
 //	    	this.content  = content;
 //	    }

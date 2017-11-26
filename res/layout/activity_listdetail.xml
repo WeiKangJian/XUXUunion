@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-   tools:context="com.example.real.Listdetail">
+   tools:context="com.Activitys.real.Listdetail">
 
     <ImageView
         android:layout_width="200dp"
@@ -42,5 +42,14 @@
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@+id/editText1"
         android:text="发表评论" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/teacher_desc_textView"
+         >
+    </RelativeLayout>
 
 </RelativeLayout>

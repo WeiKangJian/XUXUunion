@@ -1,0 +1,45 @@
+<LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"   
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="495dp"
+    tools:context="com.example.real.Danmutext"
+    android:id="@+id/RE" >
+
+
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <EditText
+        android:id="@+id/danmutext1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/caonima1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送" />
+
+    <Button
+        android:id="@+id/caonima2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止弹幕" />
+
+</LinearLayout>
+
+</LinearLayout>

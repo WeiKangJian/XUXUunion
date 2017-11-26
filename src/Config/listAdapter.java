@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.List;
 import java.util.zip.Inflater;
 
-import com.example.real.Listdetail;
+import com.Activitys.real.Listdetail;
 import com.example.real.R;
 public class listAdapter extends ArrayAdapter<thelistcontent> {
 	public listAdapter(Context context, int resource, List<thelistcontent> objects) {

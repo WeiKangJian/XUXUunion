@@ -3,8 +3,8 @@ package Config;
 import java.util.List;
 import java.util.Random;
 
-import com.example.real.Addfriend;
-import com.example.real.Listdetail;
+import com.Activitys.real.Addfriend;
+import com.Activitys.real.Listdetail;
 import com.example.real.R;
 
 import android.content.Context;

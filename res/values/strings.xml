@@ -17,5 +17,9 @@
     <string name="title_activity_strattips">Strattips</string>
     <string name="title_activity_robert">Robert</string>
     <string name="title_activity_myinfo">Myinfo</string>
+    <string name="title_activity_pic_chooser">PicChooserActivity</string>
+    <string name="title_activity_private_comment">PrivateComment</string>
+    <string name="title_activity_danmu_text">DanmuText</string>
+    <string name="title_activity_danmutext">Danmutext</string>
 
 </resources>

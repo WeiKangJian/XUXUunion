@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.example.real.Strattips" >
+    tools:context="com.Activitys.real.Strattips" >
 
 	    <TextView
 	        android:id="@+id/textView1"
