@@ -1,55 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-   tools:context="com.Activitys.real.Listdetail">
+    android:orientation="vertical"
+    tools:context="com.Activitys.real.Listdetail" >
 
     <ImageView
+        android:id="@+id/teacher_large_imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/teacher_large_imageView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_gravity="center_horizontal"
+        />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
         android:id="@+id/teacher_desc_textView"
-        android:gravity="center"
-        android:layout_below="@+id/teacher_large_imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:ems="10" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/editText1"
-        android:text="发表评论" />
-
-    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/teacher_desc_textView"
-         >
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="New Text" />
+	<RelativeLayout
+        android:id="@+id/RERERE"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        tools:context="com.example.real.Danmutext"
+ >
     </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+        <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="停止弹幕" />
+
+	</LinearLayout>
+</LinearLayout>

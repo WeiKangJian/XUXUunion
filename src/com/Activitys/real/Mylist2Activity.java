@@ -183,6 +183,8 @@ public class Mylist2Activity extends Activity {
 			}
     		imagemian.setBackgroundColor(Color.BLACK);
     		imagemian.setImageBitmap(myBitmap);
+			Config.flagOfPicture =true;
+			Config.bit = myBitmap;
     	}
     	
     }

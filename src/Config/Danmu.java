@@ -17,7 +17,7 @@ private TranslateAnimation translateAnimation;
 public Danmu(TextView textView, RelativeLayout relativeLayout,boolean isIn){
     int length=relativeLayout.getBottom()-relativeLayout.getTop();      //获取relativelayout的长度
 
-    int y=relativeLayout.getTop()+(int)(Math.random()*length);       //设置弹幕随机产生的y坐标
+    int y=(int) ((0.5*relativeLayout.getTop())+(int)(Math.random()*length));       //设置弹幕随机产生的y坐标
     translateAnimation=new TranslateAnimation(relativeLayout.getLeft(),relativeLayout.getRight(),y-400,y-400);
     translateAnimation.setDuration(3000);
     textView.setAnimation(translateAnimation);

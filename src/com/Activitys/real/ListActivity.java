@@ -3,7 +3,6 @@ package com.Activitys.real;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.real.Danmutext;
 import com.example.real.R;
 
 import Config.thelistcontent;
@@ -19,6 +18,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
@@ -38,6 +38,7 @@ public class ListActivity extends Activity {
 		private View image6;
 		private View image7;
 		private View image8;
+		private View image9;
 		private Spinner spinner;
 		private ArrayAdapter<String> adapter;
 		private List<String> list = new ArrayList<String>();
@@ -62,6 +63,7 @@ public class ListActivity extends Activity {
 		image6 = findViewById(R.id.imageView4);
 		image7 = findViewById(R.id.imageView7);
 		image8 = findViewById(R.id.imageView8);
+		image9 = findViewById(R.id.imageView6);
 		spinner = (Spinner) findViewById(R.id.spinner1);
 		spinner.setAdapter(adapter);
 		image2.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +121,15 @@ public class ListActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				startToast();
+				startToast("该功能尚未开放");
+			}
+		});
+		image9.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				startToast("该功能正在研发");
 			}
 		});
 		spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
@@ -174,10 +184,8 @@ public class ListActivity extends Activity {
 		Intent intent7 = new Intent(this,Myinfo.class);
 		startActivity(intent7);
 	}
-	private void startToast(){
-		Intent intent8 = new Intent(this,Danmutext.class);
-		startActivity(intent8);
-		Toast.makeText(this, "该功能尚未开放", Toast.LENGTH_SHORT).show();
+	private void startToast(String string){
+		Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
 		
 	}
 	 class NetworkChangeReceiver extends BroadcastReceiver{
