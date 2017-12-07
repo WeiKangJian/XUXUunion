@@ -25,9 +25,13 @@ public class listAdapter extends ArrayAdapter<thelistcontent> {
 
         // 获取老师的数据
        final  thelistcontent teacher = getItem(position);
-
         // 创建布局
-        View oneTeacherView = LayoutInflater.from(getContext()).inflate(R.layout.item, parent, false);
+       View oneTeacherView;
+       if(convertView  == null){
+         oneTeacherView = LayoutInflater.from(getContext()).inflate(R.layout.item, parent, false);
+       }else{
+    	   oneTeacherView = convertView;
+       }
 
         // 获取ImageView和TextView
         ImageView imageView = (ImageView) oneTeacherView.findViewById(R.id.teacher_small_imageView);

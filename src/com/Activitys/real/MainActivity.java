@@ -25,7 +25,7 @@ public class MainActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		Timer timer = new Timer();
-		final Intent intent = new Intent(this,ListActivity.class);
+		final Intent intent = new Intent(this,LoginActivity.class);
 		TimerTask task  = new TimerTask() {
 			@Override
 			public void run() {
